@@ -236,6 +236,7 @@ h3.title {
     background-size: cover;
     background-position: center;
     max-width: 1440px;
+    margin: auto;
 }
 .hero .content {
     display: flex;
@@ -357,7 +358,7 @@ h3.title {
     position: relative;
 }
 .our-portfolio .item .overlay {
-    background-color: #4d5ae5;
+    background-color: #3f51b5;
     color: #f4f4fd;
     padding: 40px 32px;
     position: absolute;
