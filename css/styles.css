@@ -447,7 +447,9 @@ h3.title {
     letter-spacing: 0.04em;
     color: #fff;
     width: 264px;
+    height: 40px;
     padding: 8px 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-form .form-input:focus {
@@ -509,15 +511,18 @@ h3.title {
     transform: translate(-50%, -50%) scale(1);
     display: flex;
     flex-direction: column;
-    max-width: 408px;
+    width: 408px;
     min-height: 584px;
-    padding: 24px;
+    padding: 72px 24px 24px;
     background: #fcfcfc;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal .close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -527,13 +532,19 @@ h3.title {
     border-radius: 50%;
     width: 24px;
     height: 24px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: border-color, background-color, fill;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal .close:hover,
 .modal .close:focus {
-    border-color: transparent;
+    border: none;
     background-color: #404bbf;
+}
+.modal .close .icon {
+    fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal .close:hover .icon,
+.modal .close:focus .icon {
     fill: #fff;
 }
 .modal-title {
@@ -546,6 +557,11 @@ h3.title {
 .modal-form {
     display: flex;
     flex-direction: column;
+}
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
 }
 .modal-form label {
     display: flex;
@@ -578,9 +594,7 @@ h3.title {
     letter-spacing: 0.04em;
     color: #fff;
 }
-.modal-form textarea {
-    margin-bottom: 16px;
-}
+
 .form-acceptance {
     display: flex;
     align-items: center;
