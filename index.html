@@ -349,8 +349,10 @@
             </div>
             <div class="footer-form">
                 <p class="footer-title">Subscribe</p>
-                <form class="form" action="">
-                    <input type="email" class="form-input" placeholder="E-mail">
+                <form class="form" action="#">
+                    <label class="form-label">
+                        <input type="email" class="form-input" placeholder="E-mail">
+                    </label>
                     <button class="form-btn" type="submit">Subscribe<svg class="icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-telegram"></use>
                         </svg>
@@ -361,24 +363,24 @@
     </footer>
     <div class="modal" id="modal-main">
         <div class="modal-box">
-            <div class="close">
+            <button type="button" class="close">
                 <svg class="icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-black-18"></use>
                 </svg>
-            </div>
+            </button>
             <p class="modal-title">Leave your contacts and we will call you back</p>
-            <form class="modal-form" action="">
-                <label for="Name">Name</label>
-                <input class="form-input" type="text" name="Name">
-                <label for="Phone">Phone</label>
-                <input class="form-input" type="tel" name="Phone">
-                <label for="Email">Email</label>
-                <input class="form-input" type="email" name="Email">
-                <label for="Comment">Comment</label>
-                <textarea class="form-input" type="text" name="Comment" rows="4">
+            <form class="modal-form" action="#">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-input" type="text" name="name" id="name">
+                <label class="form-label" for="phone">Phone</label>
+                <input class="form-input" type="tel" name="phone" id="phone">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" type="email" name="email" id="email">
+                <label class="form-label" for="comment">Comment</label>
+                <textarea class="form-input" name="comment" id="comment" rows="4">
                 </textarea>
                 <div class="form-acceptance">
-                    <input class="form-checkbox" type="checkbox" name="" id="">
+                    <input class="form-checkbox" type="checkbox">
                     <p class="form-acceptance-text">I accept the terms and conditions of the <a class="form-link" href="">Privacy Policy</a></p>
                 </div>
                 <button class="form-btn" type="submit">Send</button>
