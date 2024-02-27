@@ -402,8 +402,14 @@
                     <textarea class="form-input" name="user-comment" id="user-comment" rows="4" placeholder="Text input"></textarea>
                 </div>
                 <div class="form-acceptance">
-                    <input class="form-checkbox" type="checkbox">
-                    <p class="form-acceptance-text">I accept the terms and conditions of the <a class="form-link" href="">Privacy Policy</a></p>
+                    <input class="form-checkbox visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true">
+                    <label class="form-acceptance-text" for="user-privacy">I accept the terms and conditions of the <span class="pseudo-checkbox">
+                            <svg class="icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-acceptance"></use>
+                            </svg>
+                        </span>
+                        <a class="form-link" href="">Privacy Policy</a>
+                    </label>
                 </div>
                 <button class="form-btn" type="submit">Send</button>
             </form>
