@@ -557,15 +557,15 @@ h3.title {
     display: flex;
     flex-direction: column;
 }
-.form-inputs {
+.modal-form .form-item {
     display: flex;
     flex-direction: column;
     margin-bottom: 8px;
 }
-.modal-form label {
+.modal-form .form-label {
     display: block;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
     margin-bottom: 4px;
@@ -580,9 +580,11 @@ h3.title {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    color: #fff;
+    color: #2e2f42;
     width: 100%;
-    padding: 8px 16px;
+    height: 40px;
+    padding: 8px 16px 8px 38px;
+    outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form .form-input:focus {
@@ -592,7 +594,7 @@ h3.title {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    color: #fff;
+    color: rgba(46, 47, 66, 0.4);
 }
 .modal-form .form-input + .icon {
     position: absolute;
@@ -604,11 +606,8 @@ h3.title {
 .modal-form .form-input:focus + .icon {
     fill: #4d5ae5;
 }
-.modal-form .form-comments {
-    margin-bottom: 16px;
-}
-.modal-form .form-comments textarea {
-    outline: transparent;
+.modal-form textarea.form-input {
+    padding-left: 16px;
     height: 120px;
 }
 .form-acceptance {
@@ -625,7 +624,7 @@ h3.title {
 }
 .modal-form .form-acceptance-text {
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
@@ -640,7 +639,7 @@ h3.title {
     min-width: 165px;
     height: 56px;
     background-color: #4d5ae5;
-    box-shadow: 0 4 4 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     border: none;
     border-radius: 4px;
     margin: auto;
