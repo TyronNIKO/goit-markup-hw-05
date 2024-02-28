@@ -604,6 +604,7 @@ h3.title {
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
+    fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form .form-input:focus + .icon {
@@ -675,15 +676,7 @@ h3.title {
 .modal-form .form-btn:focus {
     background-color: #404bbf;
 }
-polyline,
-path {
-    fill: inherit;
-    stroke: inherit;
-}
-.icon path.fill-iris {
-    fill: #4d5ae5 !important;
-    stroke: #4d5ae5 !important;
-}
+
 /*!*/
 .mx-auto {
     margin-left: auto;
