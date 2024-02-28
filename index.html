@@ -351,7 +351,7 @@
                 <p class="footer-title">Subscribe</p>
                 <form class="form" action="#">
                     <label class="form-label">
-                        <input type="email" class="form-input" name="email" placeholder="E-mail">
+                        <input type="email" class="form-input" name="email" placeholder="E-mail" required>
                     </label>
                     <button class="form-btn" type="submit">Subscribe<svg class="icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-telegram"></use>
@@ -361,7 +361,7 @@
             </div>
         </div>
     </footer>
-    <div class="modal is-open" id="modal-main">
+    <div class="modal" id="modal-main">
         <div class="modal-box">
             <button type="button" class="close" onclick="closeModal('modal-main')">
                 <svg class="icon" width="8" height="8">
@@ -369,7 +369,7 @@
                 </svg>
             </button>
             <p class="modal-title">Leave your contacts and we will call you back</p>
-            <form class="modal-form" action="#">
+            <form class="modal-form" action="#" method="POST">
                 <div class="form-item">
                     <label class="form-label" for="user-name">Name</label>
                     <div class="input-group">
@@ -382,7 +382,7 @@
                 <div class="form-item">
                     <label class="form-label" for="user-phone">Phone</label>
                     <div class="input-group">
-                        <input class="form-input" type="tel" name="user-phone" id="user-phone">
+                        <input class="form-input" type="tel" name="user-phone" id="user-phone" required>
                         <svg class="icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-phone-black-18"></use>
                         </svg>
@@ -391,7 +391,7 @@
                 <div class="form-item">
                     <label class="form-label" for="user-email">Email</label>
                     <div class="input-group">
-                        <input class="form-input" type="email" name="user-email" id="user-email">
+                        <input class="form-input" type="email" name="user-email" id="user-email" required>
                         <svg class="icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-email-black-18"></use>
                         </svg>
@@ -417,13 +417,10 @@
             <script>
                 function openModal(text) {
                     let modal = document.querySelector(text);
-                    console.log(modal);
-
                     modal.classList.add('is-open')
                 };
                 function closeModal(id) {
                     let modal = document.getElementById(id);
-                    console.log(modal);
                     modal.classList.remove('is-open')
                 };
             </script>

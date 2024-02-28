@@ -675,6 +675,15 @@ h3.title {
 .modal-form .form-btn:focus {
     background-color: #404bbf;
 }
+polyline,
+path {
+    fill: inherit;
+    stroke: inherit;
+}
+.icon path.fill-iris {
+    fill: #4d5ae5 !important;
+    stroke: #4d5ae5 !important;
+}
 /*!*/
 .mx-auto {
     margin-left: auto;
